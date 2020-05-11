@@ -186,8 +186,8 @@ set(hgrp,'tag','osm_map')
         initialResolution = 2 * pi * 6378137 / tileSize; % 156543.03392804062 for tileSize 256 pixels
         zoomlevel = floor(log2(initialResolution/minRes));
 
-        % Enforce valid zoom levels: 1 <= zoom <= 12
-        zoomlevel = min(max(zoomlevel, 1), 16);
+        % Enforce valid zoom levels: 1 <= zoom <= 19
+        zoomlevel = min(max(zoomlevel, 1), 19);
     end
 
     function [x,y] = latLonToMeters(lat, lon )
